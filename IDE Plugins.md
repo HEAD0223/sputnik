@@ -52,6 +52,8 @@ _WS-адепты считают, что их IDE совершенна и не т
 - less-css-mode
 
 ### Atom
+[Awesome Atom](https://github.com/mehcode/awesome-atom) - подборка плагинов, тем и ссылок
+
 - [emmet](https://atom.io/packages/emmet) - ускорение набора HTML и CSS при помощи сниппетов;
 - [stylus](https://atom.io/packages/Stylus) - подсветка синтаксиса Stylus, также включает в себя сниппеты, но лучше использовать emmet, как наиболее популярное решение для разных редакторов;
 - [language-jade](https://atom.io/packages/language-jade) - подсветка синтаксиса Jade (Pug);
