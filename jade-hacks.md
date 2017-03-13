@@ -92,6 +92,24 @@ mixin tag()
 +tag()(tag="a" href="#" class="test2")
 ```
 
+## Динамические аттрибуты
+```pug
+- var attrs = {}
+
+if item.submenu
+	- var tag = 'button'
+	- customAttrs.type = "button"
+else
+	- var tag = 'a'
+	- customAttrs.href = "#"
+
+.main-menu
+	#{tag}.main-menu__trigger&attributes(customAttrs)
+    if item.submenu
+        .main-menu__submenu
+            | submenu
+```
+
 ## Генерация элементов неизвестной вложенности (рекурсия)
 ```jade
 mixin list(data)
