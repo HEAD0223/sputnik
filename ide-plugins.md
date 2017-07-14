@@ -2,7 +2,7 @@
 
 _Обращаем внимание, что это не полный список только любимых плагинов._
 
-## Sublime Text
+## [Sublime Text](https://www.sublimetext.com/)
 
 ### Работа с кодом
 - [Emmet](http://emmet.io) — пожалуй, самый полезный плагин со сниппетами для вёрстки HTML. Прирост к скорости — 100500%.
@@ -70,24 +70,36 @@ _Обращаем внимание, что это не полный список
 - [EasyMotion](https://github.com/tednaleid/sublime-EasyMotion) – удобное перемещение к указанному символу.
 - [CanIUse](http://timkl.xyz/sublime-text-caniuse/) - проверка поддержки браузерми свойств CSS и HTML элементов
 
-## Webstorm, PHPStorm
+
+## [Visual Studio Code](https://code.visualstudio.com/)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) — плагин для форматирования чужого кода без боли и конфликтов в VCS.
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) — удобный менеджер проектов
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - автокомплит имен файлов
+- [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) - помощник при документировании кода
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - лучший линтер для JavaScript
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) - хоткеии из Sublime Text (есть и от других редакторов)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - подсветка цветов в css
+- [Studio Icons](https://marketplace.visualstudio.com/items?itemName=jtlowe.vscode-icon-theme) - красивые иконки из Visual Studio
+
+
+## [Webstorm](https://www.jetbrains.com/webstorm/), [PHPStorm](https://www.jetbrains.com/phpstorm/)
 _WS-адепты считают, что их IDE совершенна и не требует сторонних плагинов. Но мы смогли вытащить из них целых два._
 
 - [EditorConfig](http://editorconfig.org) — плагин для форматирования чужого кода без боли и конфликтов в VCS.
 - [Deployment](https://www.jetbrains.com/webstorm/help/deployment.html) — возможность автозагрузки/синхронизации кода на удаленом хостинге, помогает в случае удаленного расположение проекта.
 
 
-## Brackets
+## [Brackets](http://brackets.io/)
 - [Extract for Brackets (Preview)](https://github.com/adobe/brackets) — фотошоп скоро будет не нужен! Всё в редакторе! От создателей Фотошопа.
 
-## VIM
+## [VIM](http://www.vim.org/download.php), [Neovim](https://github.com/neovim/neovim)
 - [neocomplete](https://github.com/Shougo/neocomplete.vim) — крутой автокомплит кода.
 - [NERD Tree](https://github.com/scrooloose/nerdtree) — удобная навигация по дереву файлов и каталогов
 - [bufexplorer](https://github.com/jlanzarotta/bufexplorer) — удобная навигация по открытым буферам
 - [NERD Commenter](https://github.com/scrooloose/nerdcommenter) — поддержка комментирования кода для разных языков
 - [Startify](https://github.com/mhinz/vim-startify) — настройка стартового экрана Vim
 
-## Emacs
+## [Emacs](https://www.gnu.org/software/emacs/), [Spacemacs](http://spacemacs.org/)
 Мне было лень разбираться, поэтому вот:
 - flycheck
 - auto-complete
@@ -102,10 +114,10 @@ _WS-адепты считают, что их IDE совершенна и не т
 - js2-refactor
 - less-css-mode
 
-## Xcode
+## [Xcode](https://developer.apple.com/xcode/download/)
 - [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin)
 
-## Atom
+## [Atom](https://atom.io/)
 
 [Awesome Atom](https://github.com/mehcode/awesome-atom) - подборка плагинов, тем и ссылок
 
