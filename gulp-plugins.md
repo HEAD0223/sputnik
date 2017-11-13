@@ -1,5 +1,5 @@
 
-##HTML&CSS
+## HTML&CSS
 * [autoprefixer](https://github.com/postcss/autoprefixer) - parse CSS and add vendor prefixes to rules by Can I Use.
 * [gulp-browser-sync](https://github.com/BrowserSync/gulp-browser-sync) - keep multiple browsers & devices in sync when building websites.
 * [gulp-useref](https://github.com/jonkemp/gulp-useref) - parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets.
@@ -12,7 +12,7 @@
 * [gulp-htmlhint](https://github.com/bezoerb/gulp-htmlhint) - HTML validator.
 * [gulp-processhtml](https://www.npmjs.com/package/gulp-processhtml) - Process html files at build time to modify them as you wish.
 
-##JavaScript
+## JavaScript
 * [gulp-autopolyfiller](https://github.com/azproduction/gulp-autopolyfiller) - precise polyfills. This is like Autoprefixer, but for JavaScript polyfills.
 * [gulp-babel](https://github.com/babel/gulp-babel) - transpiler for writing next generation JavaScript.
 * [gulp-jsfmt](https://www.npmjs.com/package/gulp-jsfmt) - for formatting, searching, and rewriting JavaScript.
@@ -29,14 +29,14 @@
 * [gulp-uglify](https://github.com/terinjokes/gulp-uglify) - JavaScript compressor.
 * [gulp-concat](https://github.com/wearefractal/gulp-concat) - concatenate files.
 
-###Unit Tests
+### Unit Tests
 * [gulp-nodeunit](https://github.com/kjvalencik/gulp-nodeunit)
 * [gulp-jasmine](https://github.com/sindresorhus/gulp-jasmine)
 * [gulp-qunit](https://github.com/jonkemp/gulp-qunit)
 * [gulp-mocha](https://github.com/sindresorhus/gulp-mocha)
 * [gulp-karma](https://github.com/karma-runner/gulp-karma)
 
-##Graphics
+## Graphics
 * [gulpicon](https://github.com/wakayama-io/gulpicon/) - mystical CSS icon solution.
 * [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont) - SVG to webfont converter.
 * [gulp-responsive](https://github.com/mahnunchik/gulp-responsive) - produce images at different sizes for responsive websites.
@@ -47,8 +47,7 @@
 * [gulp-spritesmith](https://github.com/otouto/gulp-spritesmith) - converting a set of images into a spritesheet and corresponding CSS variables.
 
 
-##Others
-
+## Others
 * [gulp-grunt](https://github.com/gratimax/gulp-grunt) - able to run Grunt tasks from Gulp.
 * [gulp-watch](https://github.com/floatdrop/gulp-watch) — run tasks whenever watched files change.
 * [gulp-notify](https://github.com/mikaelbr/gulp-notify) - automatic error messages in system notifications center when Gulp tasks fail.
@@ -72,7 +71,7 @@
 * [gulp-plumber](https://github.com/floatdrop/gulp-plumber) - prevents pipe breaking caused by errors from gulp plugins
 * [gulp-data](https://github.com/colynb/gulp-data) - Generate a data object from a variety of sources: json, front-matter, database, anything. Compatible with many plugins including `gulp-jade` and `gulp-swig`
 
-##Compilers
+## Compilers
 * [gulp-less](https://github.com/plus3network/gulp-less) - LESS in CSS.
 * [gulp-sass](https://github.com/dlmanning/gulp-sass) - SASS/SCSS in СSS.
 * [gulp-compass](https://github.com/appleboy/gulp-compass) - SASS with Compass in CSS.
@@ -89,7 +88,7 @@
 * [gulp-riot](https://github.com/e-jigsaw/gulp-riot) - RiotJS templates in JavaScript.
 * [gulp-swig](https://github.com/colynb/gulp-swig) - Compile swig templates.
 
-##Finally
+## Finally
 * [psi](https://github.com/addyosmani/psi) - PageSpeed Insights with reporting.
 * [tmi](https://github.com/addyosmani/tmi) -  TMI (Too Many Images) - discover your image weight on the web.
 * [ngrok](https://ngrok.com/) - Introspected tunnels to localhost.
