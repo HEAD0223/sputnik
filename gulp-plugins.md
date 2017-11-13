@@ -1,97 +1,125 @@
+# Плагины для Gulp
 
-## HTML&CSS
-* [autoprefixer](https://github.com/postcss/autoprefixer) - parse CSS and add vendor prefixes to rules by Can I Use.
-* [gulp-browser-sync](https://github.com/BrowserSync/gulp-browser-sync) - keep multiple browsers & devices in sync when building websites.
-* [gulp-useref](https://github.com/jonkemp/gulp-useref) - parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets.
-* [gulp-email-design](https://github.com/alexshk/gulp-email-design) - a workflow for designing and testing HTML email templates.
-* [gulp-uncss](https://github.com/ben-eb/gulp-uncss) - remove unused CSS from your projects.
-* [gulp-csso](https://github.com/ben-eb/gulp-csso) - very cool CSS minificator. In addition, there are many CSS optimizers and [benchmark tests](http://goalsmashers.github.io/css-minification-benchmark/) ([GitHub](https://github.com/GoalSmashers/css-minification-benchmark)) for them. But recently I saw most powerful [Shorthand](https://github.com/frankmarineau/shorthand) utility and [gulp-shorthand](https://github.com/kevva/gulp-shorthand), which does folowing:
-* [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin) - neat HTML minificator.
-* [gulp-csscomb](https://github.com/koistya/gulp-csscomb) - refines the structure of your CSS.
-* [gulp-csslint](https://www.npmjs.com/package/gulp-csslint) - CSS linter.
-* [gulp-htmlhint](https://github.com/bezoerb/gulp-htmlhint) - HTML validator.
-* [gulp-processhtml](https://www.npmjs.com/package/gulp-processhtml) - Process html files at build time to modify them as you wish.
+## Plugins
+### Compilation
+* [gulp-sass](https://github.com/dlmanning/gulp-sass) - Sass → CSS with [libsass](https://github.com/sass/libsass).
+* [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass) - Sass → CSS with Ruby Sass.
+* [gulp-compass](https://github.com/appleboy/gulp-compass) - Sass → CSS with Ruby Sass & Compass.
+* [gulp-less](https://github.com/plus3network/gulp-less) - [Less](https://github.com/less/less.js) → CSS.
+* [gulp-stylus](https://github.com/stevelacy/gulp-stylus) - [Stylus](https://github.com/stylus/stylus) → CSS.
+* [gulp-postcss](https://github.com/postcss/gulp-postcss) - Pipe CSS through [PostCSS](https://github.com/postcss/postcss) processors with a single parse.
+* [gulp-coffee](https://github.com/contra/gulp-coffee) - [Coffeescript](https://github.com/jashkenas/coffeescript) → JavaScript.
+* [gulp-typescript](https://github.com/ivogabe/gulp-typescript) - [TypeScript](https://github.com/Microsoft/TypeScript) → JavaScript.
+* [gulp-react](https://github.com/sindresorhus/gulp-react) - Facebook [React](https://github.com/facebook/react) JSX templates → JavaScript.
+* [webpack-stream](https://github.com/shama/webpack-stream) - Run [webpack](https://github.com/webpack/webpack) as a stream to conveniently integrate with gulp.
 
-## JavaScript
-* [gulp-autopolyfiller](https://github.com/azproduction/gulp-autopolyfiller) - precise polyfills. This is like Autoprefixer, but for JavaScript polyfills.
-* [gulp-babel](https://github.com/babel/gulp-babel) - transpiler for writing next generation JavaScript.
-* [gulp-jsfmt](https://www.npmjs.com/package/gulp-jsfmt) - for formatting, searching, and rewriting JavaScript.
-* [gulp-jscs](https://github.com/jscs-dev/gulp-jscs) - for checking JavaScript Code Style.
-* [gulp-modernizr](https://github.com/doctyper/gulp-modernizr) - build out a lean, mean Modernizr machine.
-* [gulp-express](https://github.com/gimm/gulp-express) — start (and supervise) an Express.js web server using, works well with socket.io
-* [gulp-requirejs](https://github.com/robinthrift/gulp-requirejs) and [gulp-browserify](https://github.com/deepak1556/gulp-browserify) - optimize the work with RequireJS and Browserify respectively.
-* [gulp-plato](https://github.com/sindresorhus/gulp-plato) - generate static analysis reports.
-* [gulp-complexity](https://github.com/alexeyraspopov/gulp-complexity) - evaluates code maintainability using Halstead and Cyclomatic metrics.
-* [fixmyjs](https://github.com/kirjs/gulp-fixmyjs) - automatically fix silly lint errors with help of [JSHint](http://jshint.com/) ([gulp-jshint](https://github.com/spalger/gulp-jshint)).
-* [gulp-jscpd](https://github.com/yannickcr/gulp-jscpd) — copy/paste detector for programming source code.
-* [gulp-buddy.js](https://github.com/Semigradsky/gulp-buddy.js) - magic number detection for javascript.
-* [gulp-jsonlint](https://github.com/rogeriopvl/gulp-jsonlint)  - JSON validator.
-* [gulp-uglify](https://github.com/terinjokes/gulp-uglify) - JavaScript compressor.
-* [gulp-concat](https://github.com/wearefractal/gulp-concat) - concatenate files.
+### Transpilation
+* [gulp-babel](https://github.com/babel/gulp-babel) - ES6 → ES5 with [babel](https://github.com/babel/babel).
+* [gulp-traceur](https://github.com/sindresorhus/gulp-traceur) - ES6 → ES5 using [Traceur](https://github.com/google/traceur-compiler).
+* [gulp-regenerator](https://github.com/sindresorhus/gulp-regenerator) - ES6 → ES5 with [Regenerator](https://github.com/facebook/regenerator).
+* [gulp-es6-transpiler](https://github.com/sindresorhus/gulp-es6-transpiler) - [:no_entry:] ES6 → ES5 with [es6-transpiler](https://github.com/termi/es6-transpiler).
+* [gulp-myth](https://github.com/sindresorhus/gulp-myth) - [Myth](https://github.com/segmentio/myth) - a polyfill for future versions of the CSS spec.
+* [gulp-cssnext](https://github.com/MoOx/gulp-cssnext) - [:no_entry:] Use tomorrow's CSS syntax, today, using [cssnext](https://github.com/MoOx/postcss-cssnext).
 
-### Unit Tests
-* [gulp-nodeunit](https://github.com/kjvalencik/gulp-nodeunit)
-* [gulp-jasmine](https://github.com/sindresorhus/gulp-jasmine)
-* [gulp-qunit](https://github.com/jonkemp/gulp-qunit)
-* [gulp-mocha](https://github.com/sindresorhus/gulp-mocha)
-* [gulp-karma](https://github.com/karma-runner/gulp-karma)
+### Concatenation
+* [gulp-concat](https://github.com/contra/gulp-concat) - Concatenate files.
 
-## Graphics
-* [gulpicon](https://github.com/wakayama-io/gulpicon/) - mystical CSS icon solution.
-* [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont) - SVG to webfont converter.
-* [gulp-responsive](https://github.com/mahnunchik/gulp-responsive) - produce images at different sizes for responsive websites.
-* [gulp-sharp](https://github.com/rizalp/gulp-sharp) - fastest module for work JPEG, PNG, WebP and TIFF images.
-* [gulp-svgstore](https://github.com/w0rm/gulp-svgstore) - merge SVGs from a folder.
-* [gulp-imacss](https://github.com/akoenig/imacss) - application and library that transforms image files to data URIs.
-* [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) и [gulp-tinypng](https://github.com/creativeaura/gulp-tinypng) or fimage compression.
-* [gulp-spritesmith](https://github.com/otouto/gulp-spritesmith) - converting a set of images into a spritesheet and corresponding CSS variables.
+### Minification
+* [gulp-clean-css](https://github.com/scniro/gulp-clean-css) - Minify CSS with [clean-css](https://github.com/jakubpawlowicz/clean-css).
+* [gulp-csso](https://github.com/ben-eb/gulp-csso) - Minify CSS with [CSSO](https://github.com/css/csso).
+* [gulp-uglify](https://github.com/terinjokes/gulp-uglify) - Minify JavaScript with [UglifyJS2](https://github.com/mishoo/UglifyJS2).
+* [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin) - Minify HTML with [html-minifier](https://github.com/kangax/html-minifier).
+* [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) - Minify PNG, JPEG, GIF and SVG images with [imagemin](https://github.com/imagemin/imagemin).
+* [gulp-svgmin](https://github.com/ben-eb/gulp-svgmin) - Minify SVG files with gulp.
 
+### Optimization
+* [gulp-uncss](https://github.com/ben-eb/gulp-uncss) - Remove unused CSS selectors with [UnCSS](https://github.com/giakki/uncss).
+* [gulp-css-base64](https://github.com/zckrs/gulp-css-base64) - Transform all resources found (those within a url() declaration) in CSS files into base64-encoded data URI strings.
+* [gulp-svg2png](https://github.com/akoenig/gulp-svg2png) - Convert SVGs to PNGs.
+* [gulp-responsive](https://github.com/mahnunchik/gulp-responsive) - Generate images at different sizes.
+* [gulp-svgstore](https://github.com/w0rm/gulp-svgstore) - Combine svg files into one with <symbol> elements.
+* [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont) - Create icon fonts from several SVG icons.
 
-## Others
-* [gulp-grunt](https://github.com/gratimax/gulp-grunt) - able to run Grunt tasks from Gulp.
-* [gulp-watch](https://github.com/floatdrop/gulp-watch) — run tasks whenever watched files change.
-* [gulp-notify](https://github.com/mikaelbr/gulp-notify) - automatic error messages in system notifications center when Gulp tasks fail.
-* [gulp-git](https://github.com/stevelacy/gulp-git) - able to use Git commands.
-* [gulp-jsdoc](https://github.com/jsBoot/gulp-jsdoc) - generate JavaScript documentation by running JSDoc3.
-* [gulp-rev](https://github.com/sindresorhus/gulp-rev) - static file asset revisioning through content hashing.
-* [gulp-bump](https://github.com/stevelacy/gulp-bump) - increments versions in package JSON and [gulp-update](https://github.com/tounano/gulp-update), which automatically updates packages.
-* [main-bower-files](https://github.com/ck86/main-bower-files) - inject Bower packages.
-* [gulp-removelogs](https://github.com/hemanth/gulp-removelogs) - remove console logging statements.
-* [gulp-preprocess](https://github.com/jas/gulp-preprocess) - preprocess files based off environment configuration.
-* [gulp-duration](https://github.com/hughsk/gulp-duration) — displays the elapsed execution time of Gulp tasks.
-* [gulp-changed](https://github.com/sindresorhus/gulp-changed) and [gulp-newer](https://www.npmjs.com/package/gulp-newer) — run Gulp tasks with only those source files modified since the last successful run.
-* [gulp-connect](https://github.com/avevlad/gulp-connect) - simple static web server.
-* [gulp-shell](https://github.com/sun-zheng-an/gulp-shell) - run Shell commands.
-* [gulp-ssh](https://github.com/teambition/gulp-ssh) - provides the ability to connect via SSH and SFTP.
-* [gulp-zip](https://www.npmjs.com/package/gulp-zip) - compress files and folders..
-* [gulp-clean](https://github.com/peter-vilja/gulp-clean) and [gulp-copy](https://github.com/klaascuvelier/gulp-copy) - respectively remove and copy sources.
-* [gulp-replace](https://www.npmjs.com/package/gulp-replace) - Search and replace strings in text files.
-* [gulp-filesize](https://github.com/Metrime/gulp-filesize) - displays sizes of files in a readable format.
-* [gulp-util](https://github.com/gulpjs/gulp-util) - utilities for developing Gulp plugins.
-* [gulp-plumber](https://github.com/floatdrop/gulp-plumber) - prevents pipe breaking caused by errors from gulp plugins
-* [gulp-data](https://github.com/colynb/gulp-data) - Generate a data object from a variety of sources: json, front-matter, database, anything. Compatible with many plugins including `gulp-jade` and `gulp-swig`
+### Injecting Assets
+* [gulp-useref](https://github.com/jonkemp/gulp-useref) - Parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets.
+* [gulp-inject](https://github.com/klei/gulp-inject) - Transform each file to a string and inject each transformed string into placeholders in the target stream files.
+* [wiredep](https://github.com/taptapship/wiredep) - Wire Bower dependencies to your source code.
 
-## Compilers
-* [gulp-less](https://github.com/plus3network/gulp-less) - LESS in CSS.
-* [gulp-sass](https://github.com/dlmanning/gulp-sass) - SASS/SCSS in СSS.
-* [gulp-compass](https://github.com/appleboy/gulp-compass) - SASS with Compass in CSS.
-* [gulp-stylus](https://github.com/LearnBoost/stylus) - Stylus in CSS.
-* [gulp-coffee](https://github.com/wearefractal/gulp-coffee) - CoffeeScript in JavaScript.
-* [gulp-typescript](https://github.com/ivogabe/gulp-typescript) - TypeScript in JavaScript.
-* [gulp-jade](https://github.com/phated/gulp-jade) - Jade in HTML.
-* [gulp-handlebars](https://github.com/lazd/gulp-handlebars) - Handlebars templates in JST.
-* [gulp-jst](https://github.com/rdmurphy/gulp-jst) - Underscore templates in JST.
-* [gulp-react](https://github.com/sindresorhus/gulp-react) - Facebook React's JSX templates in JST.
-* [gulp-nunjucks](https://github.com/sindresorhus/gulp-nunjucks) - Nunjucks templates in JST.
-* [gulp-dustjs](https://github.com/sindresorhus/gulp-dust) - Dust templates in JST.
-* [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) - AngularJS templates in JST.
-* [gulp-riot](https://github.com/e-jigsaw/gulp-riot) - RiotJS templates in JavaScript.
-* [gulp-swig](https://github.com/colynb/gulp-swig) - Compile swig templates.
+### Templating
+* [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache) - Concatenate and register AngularJS templates in the $templateCache.
+* [gulp-jade](https://github.com/phated/gulp-jade) - [Jade](https://github.com/pugjs/jade) → HTML.
+* [gulp-handlebars](https://github.com/lazd/gulp-handlebars) - [Handlebars](https://github.com/wycats/handlebars.js) templates → JavaScript.
+* [gulp-hb](https://github.com/shannonmoeller/gulp-hb) - [Handlebars](https://github.com/wycats/handlebars.js) templates → HTML.
+* [gulp-nunjucks](https://github.com/sindresorhus/gulp-nunjucks) - [Nunjucks](https://github.com/mozilla/nunjucks) templates → JavaScript.
+* [gulp-dustjs](https://github.com/sindresorhus/gulp-dust) - [Dust](https://github.com/linkedin/dustjs) templates → JavaScript.
+* [gulp-riot](https://github.com/e-jigsaw/gulp-riot) - [Riot](https://github.com/riot/riot) templates → JavaScript.
+* [gulp-markdown](https://github.com/sindresorhus/gulp-markdown) - Markdown → HTML.
+* [gulp-template](https://github.com/sindresorhus/gulp-template) - [Lodash ](https://github.com/lodash/lodash) templates → JavaScript.
+* [gulp-swig](https://github.com/colynb/gulp-swig) - [Swig](https://github.com/paularmstrong/swig) templates → HTML.
+* [gulp-remark](https://github.com/denysdovhan/gulp-remark) - Gulp plugin for [remark](https://github.com/wooorm/remark) - markdown processor powered by plugins
 
-## Finally
-* [psi](https://github.com/addyosmani/psi) - PageSpeed Insights with reporting.
-* [tmi](https://github.com/addyosmani/tmi) -  TMI (Too Many Images) - discover your image weight on the web.
-* [ngrok](https://ngrok.com/) - Introspected tunnels to localhost.
-* [pageres](https://github.com/sindresorhus/pageres) - responsive website screenshots.
-* [matchdep](https://github.com/tkellen/node-matchdep) -  filter npm module dependencies.
-* Maybe some automatization methods you want to use directly in the editor, so look at the [The Best Plugins for Sublime Text](http://ipestov.com/the-best-plugins-for-sublime-text/).
+### Linting
+* [gulp-csslint](https://www.npmjs.com/package/gulp-csslint) - Automated linting of CSS with [CSSLint](https://github.com/CSSLint/csslint).
+* [gulp-htmlhint](https://github.com/bezoerb/gulp-htmlhint) - [HTMLHint](https://github.com/yaniswang/HTMLHint) wrapper to validate your HTML.
+* [gulp-jshint](https://github.com/spalger/gulp-jshint) - Detect errors and potential problems in JavaScript with [JSHint](https://github.com/jshint/jshint).
+* [gulp-jscs](https://github.com/jscs-dev/gulp-jscs) - Check JavaScript code style with [jscs](https://github.com/jscs-dev/node-jscs).
+* [gulp-coffeelint](https://github.com/janraasch/gulp-coffeelint) - A style checker that helps keep [CoffeeScript](https://github.com/jashkenas/coffeescript) code clean.
+* [gulp-tslint](https://github.com/panuhorsmalahti/gulp-tslint) - [TypeScript](https://github.com/Microsoft/TypeScript) linter plugin for gulp.
+* [gulp-eslint](https://github.com/adametry/gulp-eslint) - Identify and report on patterns found in ECMAScript/JavaScript code.
+* [gulp-w3cjs](https://github.com/callumacrae/gulp-w3cjs) - Validate HTML with [w3cjs](https://github.com/thomasdavis/w3cjs).
+* [gulp-lesshint](https://github.com/lesshint/gulp-lesshint) - Lint less files with [lesshint](https://github.com/lesshint/lesshint).
+* [gulp-check-unused-css](https://github.com/zalando/gulp-check-unused-css) - Check your HTML templates for unused CSS classes.
+
+### Live Reload
+* [browser-sync](https://github.com/BrowserSync/browser-sync) - Keep multiple browsers & devices in sync when building websites ([recipes](https://github.com/BrowserSync/gulp-browser-sync)).
+* [gulp-livereload](https://github.com/vohof/gulp-livereload) - Gulp plugin for livereload.
+
+### Caching
+* [gulp-changed](https://github.com/sindresorhus/gulp-changed) - Only pass through changed files.
+* [gulp-cached](https://github.com/contra/gulp-cached) - A simple in-memory file cache.
+* [gulp-remember](https://github.com/ahaurw01/gulp-remember) - Remember and recall files passed through it.
+* [gulp-newer](https://github.com/tschaub/gulp-newer) - Pass through newer source files only.
+
+### Flow Control
+* [merge-stream](https://github.com/grncdr/merge-stream) - Merge multiple streams into one interleaved stream.
+* [streamqueue](https://github.com/nfroidure/StreamQueue) - Pipe queued streams progressively.
+* [run-sequence](https://github.com/OverZealous/run-sequence) - Run a series of dependent gulp tasks in order.
+* [gulp-if](https://github.com/robrich/gulp-if) - Conditionally run a task.
+
+### Logging
+* [gulp-notify](https://github.com/mikaelbr/gulp-notify) - Notification plugin for gulp.
+* [gulp-size](https://github.com/sindresorhus/gulp-size) - Display the size of your project.
+* [gulp-debug](https://github.com/sindresorhus/gulp-debug) - Debug vinyl file streams to see what files are run through your gulp pipeline.
+
+### Testing
+* [gulp-mocha](https://github.com/sindresorhus/gulp-mocha) - Run [Mocha](https://github.com/mochajs/mocha) tests.
+* [gulp-jasmine](https://github.com/sindresorhus/gulp-jasmine) - Run [Jasmine 2](https://github.com/jasmine/jasmine) tests in Node.js.
+* [gulp-protractor](https://github.com/mllrsohn/gulp-protractor) - Gulp wrapper for [Protractor](https://github.com/angular/protractor) tests.
+* [gulp-coverage](https://github.com/dylanb/gulp-coverage) - Coverage reporting for Node.js that is independent of the test runner.
+* [gulp-karma](https://github.com/karma-runner/gulp-karma) - Karma test runner for gulp.
+* [gulp-ava](https://github.com/sindresorhus/gulp-ava)- Run [AVA](https://github.com/sindresorhus/ava) tests with gulp.
+
+### Miscellaneous Plugins
+* [gulp-util](https://github.com/gulpjs/gulp-util) - Set of useful utilities.
+* [gulp-plumber](https://github.com/floatdrop/gulp-plumber) - Prevent pipe breaking caused by errors.
+* [gulp-load-plugins](https://github.com/jackfranklin/gulp-load-plugins) - Automatically load in gulp plugins.
+* [main-bower-files](https://github.com/ck86/main-bower-files) - Simplify build process setup by dynamically getting the library files.
+* [autoprefixer](https://github.com/postcss/autoprefixer) - Parse CSS and add vendor prefixes to rules by Can I Use.
+* [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) - Provide source map support.
+* [gulp-replace](https://github.com/lazd/gulp-replace) - A string replace plugin for gulp.
+* [gulp-rename](https://github.com/hparra/gulp-rename) - Rename files easily.
+* [gulp-rev](https://github.com/sindresorhus/gulp-rev) - Static asset revisioning by appending content hash to filenames: unicorn.css → unicorn-d41d8cd98f.css.
+* [del](https://github.com/sindresorhus/del) - Delete files/folders using globs.
+* [gulp-exec](https://github.com/robrich/gulp-exec) - Run a shell command.
+* [gulp-strip-debug](https://github.com/sindresorhus/gulp-strip-debug) - Strip console, alert, and debugger statements from JavaScript code.
+* [gulp-cssimport](https://github.com/unlight/gulp-cssimport) - Parses a CSS file, finds imports, grabs the content of the linked file and replaces the import statement with it.
+* [gulp-inline-css](https://github.com/jonkemp/gulp-inline-css) - Inline your CSS properties into the style attribute in an HTML file.
+* [gulp-gh-pages](https://github.com/shinnn/gulp-gh-pages) - Publish contents to Github pages.
+* [gulp-ng-annotate](https://github.com/Kagami/gulp-ng-annotate) - Add AngularJS dependency injection annotations with [ng-annotate](https://github.com/olov/ng-annotate).
+* [gulp-bump](https://github.com/stevelacy/gulp-bump) - Bump any semver JSON version.
+* [gulp-file-include](https://github.com/coderhaoxin/gulp-file-include) - Include files with gulp.
+* [gulp-zip](https://github.com/sindresorhus/gulp-zip) - ZIP compress files.
+* [gulp-git](https://github.com/stevelacy/gulp-git) - Run Git commands with gulp.
+* [gulp-filter](https://github.com/sindresorhus/gulp-filter) - Filter files in a vinyl stream using globbing.
+* [gulp-preprocess](https://github.com/jas/gulp-preprocess) - Preprocess files based on custom context or environment configuration.
+* [gulp-eval] (https://github.com/gulp-bem/gulp-eval) - Eval JS-expression or require CommonJS modules and JSON files.
