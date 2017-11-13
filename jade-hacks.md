@@ -97,14 +97,14 @@ mixin tag()
 - var attrs = {}
 
 if item.submenu
-	- var tag = 'button'
-	- customAttrs.type = "button"
+    - var tag = 'button'
+    - customAttrs.type = "button"
 else
-	- var tag = 'a'
-	- customAttrs.href = "#"
+    - var tag = 'a'
+    - customAttrs.href = "#"
 
 .main-menu
-	#{tag}.main-menu__trigger&attributes(customAttrs)
+    #{tag}.main-menu__trigger&attributes(customAttrs)
     if item.submenu
         .main-menu__submenu
             | submenu
