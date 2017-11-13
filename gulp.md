@@ -8,7 +8,7 @@
 
 1. Установить один раз глобально Gulp CLI (интерфейс командной строки) `npm install gulp-cli -g`<br>
 После этого следует закрыть и заново открыть окно терминала (Bash/Git-Bash).
-2. Установить локально в проект `npm install gulp -D`
+2. Установить локально в проект `npm install gulp --save-dev`
 3. Создать в проекте конфигурационный файл `touch gulpfile.js`
 
 
@@ -51,7 +51,7 @@ gulp.watch('client/templates/*.jade', function(event) {
 
 
 ## Ссылки
-[Cheatsheet по gulp](https://github.com/osscafe/gulp-cheatsheet)
-[Документация Gulp API](https://github.com/gulpjs/gulp/blob/4.0/docs/API.md)
-[Рецепты](https://github.com/gulpjs/gulp/blob/4.0/docs/recipes/README.md)
-[Gulp Awesome](https://github.com/alferov/awesome-gulp)
+- [Cheatsheet по gulp](https://github.com/osscafe/gulp-cheatsheet)
+- [Документация Gulp API](https://github.com/gulpjs/gulp/blob/4.0/docs/API.md)
+- [Рецепты](https://github.com/gulpjs/gulp/blob/4.0/docs/recipes/README.md)
+- [Gulp Awesome](https://github.com/alferov/awesome-gulp)
