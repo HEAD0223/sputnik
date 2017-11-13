@@ -72,14 +72,85 @@ _Обращаем внимание, что это не полный список
 
 
 ## [Visual Studio Code](https://code.visualstudio.com/)
+
+### Разное
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - подсветка цветов
+- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) -  изменяет автоматически парные теги
+- [Prettier - JavaScript formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - форматер JavaScript-кода
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - синхронизация настроек
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) — плагин для форматирования чужого кода без боли и конфликтов в VCS.
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) — удобный менеджер проектов
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - автокомплит имен файлов
 - [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) - помощник при документировании кода
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - лучший линтер для JavaScript
-- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) - хоткеии из Sublime Text (есть и от других редакторов)
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - подсветка цветов в css
+- [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) - aвтокомплит для npm
+
+### Сниппеты
+- [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
+- [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
+- [JavaScript (ES6) code Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [Angular 5 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+- [Angular v5 TypeScript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
+- [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=sachittandukar.laravel-5-snippets)
+- [Vue 2 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
+
+### Наборы горячих клавиш
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [Atom Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings)
+- [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+- [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)
+- [Eclipse Keymap](https://marketplace.visualstudio.com/items?itemName=alphabotsec.vscode-eclipse-keybindings)
+
+### Линтеры
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [CSSLint](https://marketplace.visualstudio.com/items?itemName=raymondcamden.CSSLint)
+- [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
+
+### Иконки
 - [Studio Icons](https://marketplace.visualstudio.com/items?itemName=jtlowe.vscode-icon-theme) - красивые иконки из Visual Studio
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+### Темы
+- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+- [Monokai Light](https://marketplace.visualstudio.com/items?itemName=zoxon.monokai-light)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+- [Nord](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
+- [Hopscotch](https://marketplace.visualstudio.com/items?itemName=idleberg.hopscotch)
+
+### Git
+- [Git Easy](https://marketplace.visualstudio.com/items?itemName=bibhasdn.git-easy)
+- [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+
+### Синтаксис
+- [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring)
+- [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
+- [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
+- [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
+
+
+
+## [Atom](https://atom.io/)
+
+[Awesome Atom](https://github.com/mehcode/awesome-atom) - подборка плагинов, тем и ссылок
+
+- [emmet](https://atom.io/packages/emmet) - ускорение набора HTML и CSS при помощи сниппетов;
+- [minimap](https://atom.io/packages/minimap) - миникарта кода как в Sublime text
+- [stylus](https://atom.io/packages/Stylus) - подсветка синтаксиса Stylus, также включает в себя сниппеты, но лучше использовать emmet, как наиболее популярное решение для разных редакторов;
+- [language-jade](https://atom.io/packages/language-jade) - подсветка синтаксиса Jade (Pug);
+- [merge-conflicts](https://atom.io/packages/merge-conflicts) - merge-tool для разрешения конфликтов в Git;
+- [blame](https://atom.io/packages/blame) - вывод построковой истории изменений для выбранного файла;
+- [atom-ungit](https://atom.io/packages/atom-ungit) - подробный просмотр изменений в Git-репозитории (ветки, коммиты, подсветка изменений);
+- [git-control](https://atom.io/packages/git-control) - GUI для Git;
+- [vim-mode](https://atom.io/packages/vim-mode) - добавляет возможности Vim;
+- [file-icons](https://atom.io/packages/file-icons) - заменяет стандартные иконки в файловом дереве на иконки, соответствующие расширениям файлов;
+- [pigments](https://atom.io/packages/pigments) - подсвечивает определения цветов в CSS соответствующими цветами;
+- [sync-settings](https://atom.io/packages/sync-settings) - синхронизация настроек редактора через Gist;
+- [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) - заменяет табы на пробелы, если необходимо в текущем проекте.
 
 
 ## [Webstorm](https://www.jetbrains.com/webstorm/), [PHPStorm](https://www.jetbrains.com/phpstorm/)
@@ -116,21 +187,3 @@ _WS-адепты считают, что их IDE совершенна и не т
 
 ## [Xcode](https://developer.apple.com/xcode/download/)
 - [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin)
-
-## [Atom](https://atom.io/)
-
-[Awesome Atom](https://github.com/mehcode/awesome-atom) - подборка плагинов, тем и ссылок
-
-- [emmet](https://atom.io/packages/emmet) - ускорение набора HTML и CSS при помощи сниппетов;
-- [minimap](https://atom.io/packages/minimap) - миникарта кода как в Sublime text
-- [stylus](https://atom.io/packages/Stylus) - подсветка синтаксиса Stylus, также включает в себя сниппеты, но лучше использовать emmet, как наиболее популярное решение для разных редакторов;
-- [language-jade](https://atom.io/packages/language-jade) - подсветка синтаксиса Jade (Pug);
-- [merge-conflicts](https://atom.io/packages/merge-conflicts) - merge-tool для разрешения конфликтов в Git;
-- [blame](https://atom.io/packages/blame) - вывод построковой истории изменений для выбранного файла;
-- [atom-ungit](https://atom.io/packages/atom-ungit) - подробный просмотр изменений в Git-репозитории (ветки, коммиты, подсветка изменений);
-- [git-control](https://atom.io/packages/git-control) - GUI для Git;
-- [vim-mode](https://atom.io/packages/vim-mode) - добавляет возможности Vim;
-- [file-icons](https://atom.io/packages/file-icons) - заменяет стандартные иконки в файловом дереве на иконки, соответствующие расширениям файлов;
-- [pigments](https://atom.io/packages/pigments) - подсвечивает определения цветов в CSS соответствующими цветами;
-- [sync-settings](https://atom.io/packages/sync-settings) - синхронизация настроек редактора через Gist;
-- [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) - заменяет табы на пробелы, если необходимо в текущем проекте.
