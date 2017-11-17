@@ -77,13 +77,12 @@ _Обращаем внимание, что это не полный список
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - подсветка цветов
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) -  изменяет автоматически парные теги
 - [Prettier - JavaScript formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - форматер JavaScript-кода
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) - автоматически добавляет закрывающий тег
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - синхронизация настроек
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) — плагин для форматирования чужого кода без боли и конфликтов в VCS.
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) — удобный менеджер проектов
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - автокомплит имен файлов
 - [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) - помощник при документировании кода
-- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - подсветка цветов в css
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) - aвтокомплит для npm
 
 ### Сниппеты
