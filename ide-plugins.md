@@ -129,7 +129,6 @@ _Обращаем внимание, что это не полный список
 - [Babel ES6/ES7](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring)
 - [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
 - [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
-- [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
 
 
 
