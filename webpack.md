@@ -1,20 +1,23 @@
 # [Webpack](https://webpack.js.org/)
+
 Мощная и гибкая система сборки для frontend
 
 **Статус:** черновик.
 
 ## Установка
+
 Для работы нужен [Node.js](http://nodejs.org/download/), включающий в себя NPM (или другой пакетный менеджер).
 
 1. Установить `npm install webpack --save-dev`
 2. Создать в проекте конфигурационный файл `touch webpack.config.js`
 3. Добавить в `package.json` в секцию "scripts"
-  ```js
-  "scripts": {
-    "start": "webpack --config webpack.config.js"
-  }
-  ```
 
+
+```js
+"scripts": {
+  "start": "webpack --config webpack.config.js"
+}
+```
 
 ## Философия
 
@@ -43,13 +46,13 @@ Webpack очень популярен не только из-за большог
 Простейший конфиг для webpack выглядит примерно так:
 
 ```js
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
   }
 };
 ```
@@ -60,6 +63,7 @@ module.exports = {
 Так же можно использовать [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) для реализации собственного сервера.
 
 ## Ссылки
-- [Документация Webpack Config](https://webpack.js.org/configuration/)
-- [Рецепты и примеры](https://github.com/webpack/webpack/blob/master/examples/README.md)
-- [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
+
+* [Документация Webpack Config](https://webpack.js.org/configuration/)
+* [Рецепты и примеры](https://github.com/webpack/webpack/blob/master/examples/README.md)
+* [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)

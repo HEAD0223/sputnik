@@ -5,6 +5,7 @@
 [Node.js](http://nodejs.org/download/), включающий в себя NPM (Node Packet Manager).
 
 ## Что такое Node.js
+
 Много путаницы у новичков в Node.js возникает из-за непонимания того, что же на самом деле это такое. И описание на nodejs.org не слишком помогает разобраться.
 
 Важно понять, что Node — это не веб-сервер. Сам по себе он ничего не делает. Это не Apache. Там нет конфиг-файла, в котором указывается путь до HTML-файлов. Если вам нужен HTTP-сервер, вам нужно написать HTTP-сервер (с помощью встроенных библиотек). Node.js — это просто ещё один способ выполнять код на вашем компьютере. Это просто среда для выполнения JavaScript.
@@ -17,10 +18,10 @@
 
 ```json
 {
-  "name" : "myApp",
-  "version" : "0.0.1",
-  "dependencies" : {
-    "express" : "3.3.x"
+  "name": "myApp",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.3.x"
   }
 }
 ```
@@ -35,10 +36,10 @@ $ npm install
 
 При запуске этой команды npm будет искать package.json в текущей директории, и если найдёт, то установит каждую указанную в нём зависимость.
 
-
 ## Обновление npm
 
 ### Windows
+
 * Зайти в папку с установленной nodejs и обновить npm до последней версии
 
 ```bash
@@ -59,17 +60,18 @@ npm install npm@latest
 
 ## Команды для работы с NPM
 
-- `npm i` или `npm install` - установка пакетов, заданных в `package.json`
-- `npm i package-name` или `npm install package-name` - установка пакета `package-name`, 
-- `npm un package-name` или `npm uninstall package-name` - удаление пакета `package-name`, удаляя его из `package.json`.
-- `npm up` или `npm update` - обновление версий пакетов и их зависимостей, обновляя версии в `package.json`.
-- `npm outdated` - проверяет какие пакеты устарели в `package.json`
+* `npm i` или `npm install` - установка пакетов, заданных в `package.json`
+* `npm i package-name` или `npm install package-name` - установка пакета `package-name`,
+* `npm un package-name` или `npm uninstall package-name` - удаление пакета `package-name`, удаляя его из `package.json`.
+* `npm up` или `npm update` - обновление версий пакетов и их зависимостей, обновляя версии в `package.json`.
+* `npm outdated` - проверяет какие пакеты устарели в `package.json`
 
 **Параметры**
-- `-D` или `--save-dev` - добавляет зависимость в `package.json`, секции `devDependencies`.
-- `-S` или `--save` - добавляет зависимость в `package.json`, секции `dependencies`.
-- `-g` или `--global` - устанавливет пакет глобально
+
+* `-D` или `--save-dev` - добавляет зависимость в `package.json`, секции `devDependencies`.
+* `-S` или `--save` - добавляет зависимость в `package.json`, секции `dependencies`.
+* `-g` или `--global` - устанавливет пакет глобально
 
 ## Ссылки
 
-- [Документация по NPM](https://docs.npmjs.com/)
+* [Документация по NPM](https://docs.npmjs.com/)

@@ -69,17 +69,17 @@ p= uppercase('Text')
 ```jade
 mixin price-tag(data)
     - currency = typeof data.currency != "undefined" ? data.currency : 'USD'
-    
+
     .price-tag&attributes(attributes)
         span.price-tag__value= data.value
         span.price-tag__currency= currency
 
 +price-tag({"value": "100"})
 +price-tag({"value": "200", "currency": "RUB"})
-
 ```
 
 ## Динамическиое имя тега
+
 ```jade
 mixin tag()
     if attributes.tag
@@ -93,6 +93,7 @@ mixin tag()
 ```
 
 ## Динамические аттрибуты
+
 ```pug
 - var attrs = {}
 
@@ -111,6 +112,7 @@ else
 ```
 
 ## Генерация элементов неизвестной вложенности (рекурсия)
+
 ```jade
 mixin list(data)
     ul
@@ -126,54 +128,53 @@ mixin list(data)
 
 ```json
 {
-    "title":"Title text",
-    "items":[
+  "title": "Title text",
+  "items": [
+    {
+      "title": "Item 1"
+    },
+    {
+      "title": "Item 2",
+      "sublevel": true,
+      "items": [
         {
-            "title":"Item 1"
+          "title": "Item 2.1"
         },
         {
-            "title":"Item 2",
-            "sublevel":true,
-            "items":[
+          "title": "Item 2.2"
+        },
+        {
+          "title": "Item 2.2",
+          "sublevel": true,
+          "items": [
+            {
+              "title": "Item 2.2.1",
+              "sublevel": true,
+              "items": [
                 {
-                    "title":"Item 2.1"
+                  "title": "Item 2.2.2.1"
                 },
                 {
-                    "title":"Item 2.2"
+                  "title": "Item 2.2.2.2"
                 },
                 {
-                    "title":"Item 2.2",
-                    "sublevel":true,
-                    "items":[
-                        {
-                            "title":"Item 2.2.1",
-                            "sublevel":true,
-                            "items":[
-                                {
-                                    "title":"Item 2.2.2.1"
-                                },
-                                {
-                                    "title":"Item 2.2.2.2"
-                                },
-                                {
-                                    "title":"Item 2.2.2.3"
-                                }
-                            ]
-                        },
-                        {
-                            "title":"Item 2.2.2"
-                        },
-                        {
-                            "title":"Item 2.2.3"
-                        }
-                    ]
+                  "title": "Item 2.2.2.3"
                 }
-            ]
-        },
-        {
-            "title":"Item 3"
+              ]
+            },
+            {
+              "title": "Item 2.2.2"
+            },
+            {
+              "title": "Item 2.2.3"
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "title": "Item 3"
+    }
+  ]
 }
 ```
-

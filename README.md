@@ -12,20 +12,16 @@
 * [Рецепты «ванильного» JavasScript](vanilla-javascript-recipes.md)
 * [Git](git.md) — система контроля версий
 * Системы сборки
-
   * [Webpack](webpack.md)
   * [Gulp](gulp.md)
   * [Плагины для Gulp](gulp-plugins.md)
   * [Grunt](grunt.md)
-
 * Код гайды
-
   * [CSS](css.md)
   * [HTML](html.md)
   * [Pug (Jade) - HTML препроцессор](pug.md)
   * [Stylus](stylus.md)
   * [JavaScript](js.md)
-
 * Разное
   * [Soft](soft.md)
   * [Awesome Features](awesome-features.md)

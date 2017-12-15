@@ -13,8 +13,8 @@
 
 1. Устанавливаем [Node.js](http://nodejs.org/download/), включающий в себя NPM (Node Packet Manager).
 2. `npm i -g grunt-cli` - устанавливаем Grunt CLI (интерфейс командной строки).<br>
-После этого следует закрыть и заново открыть окно терминала (Bash/Git-Bash).<br>
-Если при вызове команды `grunt` пишет ошибку `Command Not Found`, то нужно перезагрузиться или выйти из системы и зайти снова.
+   После этого следует закрыть и заново открыть окно терминала (Bash/Git-Bash).<br>
+   Если при вызове команды `grunt` пишет ошибку `Command Not Found`, то нужно перезагрузиться или выйти из системы и зайти снова.
 3. Устанавливаем [Git](http://git-scm.com/book/ru/Введение-Установка-Git) под Вашу ОС, если ещё не установлен.
 
 Эти 3 шага выполняются один раз.
@@ -22,6 +22,7 @@
 ## Пакеты NPM
 
 Для повседневных задач нам достаточно:
+
 * [`bump`](https://www.npmjs.org/package/grunt-bump) - обновление версии проекта.
 * [`clean`](https://www.npmjs.org/package/grunt-contrib-clean) - очистка папки от файлов.
 * [`spritesmith`](https://www.npmjs.org/package/grunt-spritesmith) - генератор спрайтов и CSS переменных.
@@ -41,17 +42,20 @@
 * [`watch`](https://www.npmjs.org/package/grunt-contrib-watch) - отслеживание изменений файлов и их компиляция.
 
 В зависимости от проекта дополнительно могут пригодиться такие пакеты:
+
 * Для объединения и минификации:
-    * [`cssmin`](https://www.npmjs.org/package/grunt-contrib-cssmin) - минификация CSS.
-    * [`concat`](https://www.npmjs.org/package/grunt-contrib-concat) - объединение скриптов в один файл.<br>
-      *Если возникают ошибки при конкатенации скриптов, то нужно установить порядку их зависисмости*.
-    * [`uglify`](https://www.npmjs.org/package/grunt-contrib-uglify) - обфускация скриптов.
+
+  * [`cssmin`](https://www.npmjs.org/package/grunt-contrib-cssmin) - минификация CSS.
+  * [`concat`](https://www.npmjs.org/package/grunt-contrib-concat) - объединение скриптов в один файл.<br>
+    _Если возникают ошибки при конкатенации скриптов, то нужно установить порядку их зависисмости_.
+  * [`uglify`](https://www.npmjs.org/package/grunt-contrib-uglify) - обфускация скриптов.
 
 * Препроцессоры:
-    * [`coffee`](https://www.npmjs.org/package/grunt-contrib-coffee) - CoffeeScript препроцессор JavaScript.
-    * [`less`](https://www.npmjs.org/package/grunt-contrib-less) - Less препроцессор CSS.
-    * [`sass`](https://www.npmjs.org/package/grunt-contrib-sass)/[`compass`](https://www.npmjs.org/package/grunt-contrib-compass) - Sass препроцессор CSS.
+
+  * [`coffee`](https://www.npmjs.org/package/grunt-contrib-coffee) - CoffeeScript препроцессор JavaScript.
+  * [`less`](https://www.npmjs.org/package/grunt-contrib-less) - Less препроцессор CSS.
+  * [`sass`](https://www.npmjs.org/package/grunt-contrib-sass)/[`compass`](https://www.npmjs.org/package/grunt-contrib-compass) - Sass препроцессор CSS.
 
 * Если этого будет недостаточно, можно поискать подходящие по ссылкам:
-    * [gruntjs.com/plugins](https://gruntjs.com/plugins)
-    * [npmjs.org](https://www.npmjs.org/)
+  * [gruntjs.com/plugins](https://gruntjs.com/plugins)
+  * [npmjs.org](https://www.npmjs.org/)
