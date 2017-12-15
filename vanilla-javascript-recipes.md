@@ -133,11 +133,13 @@ for (let article of articles) {
 ```js
 const input = document.querySelector("#input");
 ["focus", "blur", "keyup"].forEach(eventName => {
-  input.addEventListener("focus", event => {
+  input.addEventListener(eventName, event => {
     console.log(event);
   });
 });
 ```
+
+Можно использовать следующий хелпер
 
 ```js
 const input = document.querySelector("#input");
