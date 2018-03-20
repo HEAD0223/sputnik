@@ -53,19 +53,35 @@ $$("article");
 // Более продвинутый вариант
 const isString = value => toString.call(value) === "[object String]";
 
-const $ = (element, selector) => {
-  const elements = !isString(element)
-    ? element.querySelectorAll(selector)
-    : document.querySelectorAll(element);
+function $(selector, context) {
+  if ((arguments.length == 2 && !context) || !selector) {
+    return null;
+  }
 
-  const elementsArray = elements.length > 0 ? [].slice.call(elements) : [];
+  return isString(selector)
+    ? (context || document).querySelector(selector)
+    : selector || null;
+}
 
-  return elementsArray.length === 1 ? elementsArray[0] : elementsArray;
-};
+function $$(selector, context) {
+  if (selector instanceof Node || selector instanceof Window) {
+    return [selector];
+  }
+
+  if (arguments.length == 2 && !context) {
+    return [];
+  }
+
+  return Array.prototype.slice.call(
+    isString(selector)
+      ? (context || document).querySelectorAll(selector)
+      : selector || []
+  );
+}
 
 const article = $('article.post'); // 'document > article.post', <article class="post">...</article>
-const h1 = $(article, 'h1'); // 'article.post > h1', <h1>...</h1>
-const parpagraphs = $(article, 'p'); // 'article.post > p', [<p>, <p> ....]
+const h1 = $('h1', article); // 'article.post > h1', <h1>...</h1>
+const parpagraphs = $$('p', article); // 'article.post > p', [<p>, <p> ...]
 ```
 
 <a name="decendants-elements-find"></a>
