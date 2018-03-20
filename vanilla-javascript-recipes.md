@@ -49,6 +49,23 @@ $("article");
 // Несколько элементов
 const $$ = selector => document.querySelectorAll(selector);
 $$("article");
+
+// Более продвинутый вариант
+const isString = value => toString.call(value) === "[object String]";
+
+const $ = (element, selector) => {
+  const elements = !isString(element)
+    ? element.querySelectorAll(selector)
+    : document.querySelectorAll(element);
+
+  const elementsArray = elements.length > 0 ? [].slice.call(elements) : [];
+
+  return elementsArray.length === 1 ? elementsArray[0] : elementsArray;
+};
+
+const article = $('article.post'); // 'document > article.post', <article class="post">...</article>
+const h1 = $(article, 'h1'); // 'article.post > h1', <h1>...</h1>
+const parpagraphs = $(article, 'p'); // 'article.post > p', [<p>, <p> ....]
 ```
 
 <a name="decendants-elements-find"></a>
