@@ -11,8 +11,29 @@
 ```jade
 mixin test()
     a.test&attributes(attributes) test
+    pre!= JSON.stringify(attributes)
 
 +test(class="test2" href="#")
+```
+
+## Управление аттрибутами
+
+```jade
+mixin test(open)
+  -
+    var isOpen = attributes.open || false;
+    var testAttrs = {};
+
+    if (isOpen) {
+      testAttrs["data-open"] = isOpen;
+    }
+
+
+  p&attributes(testAttrs)!= JSON.stringify(testAttrs)
+
++test()
++test(open="true")
++test(open="false")
 ```
 
 ## Передача данных в миксин
