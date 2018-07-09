@@ -25,9 +25,10 @@
 * Разное
   * [Soft](soft.md)
   * [Awesome Features](awesome-features.md)
-  * [Pug (Jade) хаки и скрытые возможности](jade-hacks.md)
+  * [Pug (Jade) хаки и скрытые возможности](pugjs-hacks.md)
   * [JavaScript Plugins](js-plugins.md)
   * [Mobile](mobile.md)
   * [Введение в node.js](node-npm.md)
   * [Полезное по Adobe Photoshop](photoshop.md)
   * [Полезные сервисы](services.md)
+  
