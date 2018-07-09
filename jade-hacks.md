@@ -1,4 +1,4 @@
-# Jade (Pug) хаки и скрытые возможности
+# Pug.js (Jade) хаки и скрытые возможности
 
 **Статус:** черновик.
 
@@ -8,7 +8,7 @@
 
 ## Передача аттрибутов в миксин
 
-```jade
+```pug
 mixin test()
     a.test&attributes(attributes) test
     pre!= JSON.stringify(attributes)
@@ -18,10 +18,11 @@ mixin test()
 
 ## Управление аттрибутами
 
-```jade
+```pug
 mixin test(open)
   -
     var isOpen = attributes.open || false;
+    delete attributes.open;
     var testAttrs = {};
 
     if (isOpen) {
@@ -38,40 +39,42 @@ mixin test(open)
 
 ## Передача данных в миксин
 
-```jade
+```pug
 mixin test(data)
     a(href=data.url id="myid-#{data.id}").test= data.text
 
-+test({"text": "test", "url": "#test", "id": "1"})
++test({ "text": "test", "url": "#test", "id": "1" })
 ```
 
 ## Передача данных и атрибутов в миксин
 
-```jade
+```pug
 mixin test(data)
-    a(href=data.url id="myid-#{data.id}").test&attributes(attributes)= data.text
+    a(href=data.url id=`myid-${data.id}`).test&attributes(attributes)= data.text
 
-+test({"text": "test", "url": "#test", "id": "1"})(class="test2" href="#lol")
++test({ "text": "test", "url": "#test", "id": "1" })(class="test2" href="#lol")
 ```
 
-## Применение классов в зависимости от данных
+## Применение классов в зависимости от параметров
 
-```jade
+```pug
 mixin icon(data)
     - var classes = ['icon']
+    
     if data.icon
         - classes.push(classes[0] + '_name_' + data.icon)
+        
     if data.size
         - classes.push(classes[0] + '_size_' + data.size)
 
     i(class=classes)&attributes(attributes)
 
-+icon({"icon": "share", "size": "big"})
++icon({ "icon": "share", "size": "big" })
 ```
 
 ## JavaScript в Jade (Pug)
 
-```jade
+```pug
 //- Многострочный
 -
     var uppercase = function(text) {
@@ -87,7 +90,7 @@ p= uppercase('Text')
 
 ## Значения по умолчанию у параметров миксинов
 
-```jade
+```pug
 mixin price-tag(data)
     - currency = typeof data.currency != "undefined" ? data.currency : 'USD'
 
@@ -95,13 +98,13 @@ mixin price-tag(data)
         span.price-tag__value= data.value
         span.price-tag__currency= currency
 
-+price-tag({"value": "100"})
-+price-tag({"value": "200", "currency": "RUB"})
++price-tag({ "value": "100" })
++price-tag({ "value": "200", "currency": "RUB" })
 ```
 
 ## Динамическиое имя тега
 
-```jade
+```pug
 mixin tag()
     if attributes.tag
         - var tag = attributes.tag
@@ -109,8 +112,8 @@ mixin tag()
         #{tag}&attributes(attributes).class Test
 
 
-+tag()(tag="h1" class="test")
-+tag()(tag="a" href="#" class="test2")
++tag(tag="h1" class="test")
++tag(tag="a" href="#" class="test2")
 ```
 
 ## Динамические аттрибуты
@@ -134,7 +137,7 @@ else
 
 ## Генерация элементов неизвестной вложенности (рекурсия)
 
-```jade
+```pug
 mixin list(data)
     ul
         each item in data.items
@@ -151,19 +154,13 @@ mixin list(data)
 {
   "title": "Title text",
   "items": [
-    {
-      "title": "Item 1"
-    },
+    { "title": "Item 1" },
     {
       "title": "Item 2",
       "sublevel": true,
       "items": [
-        {
-          "title": "Item 2.1"
-        },
-        {
-          "title": "Item 2.2"
-        },
+        { "title": "Item 2.1" },
+        { "title": "Item 2.2" },
         {
           "title": "Item 2.2",
           "sublevel": true,
@@ -172,30 +169,30 @@ mixin list(data)
               "title": "Item 2.2.1",
               "sublevel": true,
               "items": [
-                {
-                  "title": "Item 2.2.2.1"
-                },
-                {
-                  "title": "Item 2.2.2.2"
-                },
-                {
-                  "title": "Item 2.2.2.3"
-                }
+                { "title": "Item 2.2.2.1" },
+                { "title": "Item 2.2.2.2" },
+                { "title": "Item 2.2.2.3" }
               ]
             },
-            {
-              "title": "Item 2.2.2"
-            },
-            {
-              "title": "Item 2.2.3"
-            }
+            { "title": "Item 2.2.2" },
+            { "title": "Item 2.2.3" }
           ]
         }
       ]
     },
-    {
-      "title": "Item 3"
-    }
+    { "title": "Item 3" }
   ]
 }
+```
+
+## Инлайн стили
+```pug
+.some-element(
+	style=`
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	`.replace(/\s/g, '')
+)
 ```
